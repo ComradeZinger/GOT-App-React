@@ -19,25 +19,26 @@ export default function RandomCharacter() {
             .then(char => setPerson(char))
     };
 
-    const checkCharData = (checkField) => {
-        if (person[checkField]) {
-            const string = checkField.charAt(0).toUpperCase() + checkField.slice(1);
-            return (
+    const checkCharData = () => { //Warning: Each child in a list should have a unique "key" prop.
+
+
+        let toRender = [];
+        for (let key in person) {
+            const string = key.charAt(0).toUpperCase() + key.slice(1);
+            toRender.push(
                 <ListGroupItem>
-                    {string}: {person[checkField]}
+                    {string}: {person[key]}
                 </ListGroupItem>
             );
         }
+        return toRender;
     }
 
     return (
         <div className='randomCharacter'>
             <ListGroup>
                 <h5>Random Character: {person.name}</h5>
-                {checkCharData('gender')}
-                {checkCharData('born')}
-                {checkCharData('died')}
-                {checkCharData('culture')}
+                {checkCharData()}
             </ListGroup>
             <Button className='secondary listGrBtn' outline onClick={updateCharacter}>Next</Button>
         </div>

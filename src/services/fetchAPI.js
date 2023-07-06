@@ -10,13 +10,21 @@ const getResource = async (url) => {
 };
 
 const _transformCharacter = (char) => {
-    return {
+    const obj = {
         name: char.name,
         gender: char.gender,
         born: char.born,
         died: char.died,
         culture: char.culture
     }
+
+    let newObj = {};
+    for (let key in obj) {
+        if (obj[key]) {
+            newObj[key] = obj[key]
+        }
+    }
+    return newObj;
 }
 
 const getAllCharacters = async (url = "") => {

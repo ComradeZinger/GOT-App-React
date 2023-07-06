@@ -21,7 +21,10 @@ export default function App() {
         </div>
       </div>
       <div className='App-body'>
-        <CharacterDetails />
+        <div className='description'>
+          <RandomCharacter/>
+        </div>
+        {/* <CharacterDetails /> */}
         {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

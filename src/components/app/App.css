@@ -28,8 +28,24 @@
 }
 
 .App-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-right: 40px;
   padding-left: 40px;
+}
+
+.description {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 45%;
+  min-width: 30%;
+  padding: 10px;
+  border-radius: 7px;
+  height: 300px;
+  position: relative;
 }
 
 /* .App-header {
