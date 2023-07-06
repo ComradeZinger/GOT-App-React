@@ -1,0 +1,11 @@
+.characterDetails {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 35%;
+    padding: 10px;
+    border-radius: 7px;
+    height: 300px;
+    position: relative;
+}
