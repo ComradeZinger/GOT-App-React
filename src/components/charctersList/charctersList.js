@@ -41,7 +41,7 @@ export default function CharctersList() {
 
   const nextOrPrevPage = (side = "prev") => {
     if (side === "next") {
-      setCurPage(prevPage => prevPage === maxPage ? prevPage = maxPage : prevPage - 1)
+      setCurPage(prevPage => prevPage === maxPage ? prevPage = maxPage : prevPage + 1)
     } else {
       setCurPage(prevPage => prevPage === 1 ? prevPage = 1 : prevPage - 1)
     }
