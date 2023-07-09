@@ -3,7 +3,7 @@ import { Button } from 'reactstrap';
 
 // import logo from './logo.svg';
 import RandomCharacter from '../randomCharacter/randomCharacter';
-// import charctersList from '../charctersList/charctersList';
+import CharctersList from '../charctersList/charctersList';
 import CharacterDetails from '../characterDetails/characterDetails';
 
 import './App.css';
@@ -23,6 +23,9 @@ export default function App() {
       <div className='App-body'>
         <div className='description'>
           <RandomCharacter/>
+        </div>
+        <div className='list'>
+          <CharctersList/>
         </div>
         {/* <CharacterDetails /> */}
         {/* <header className="App-header">

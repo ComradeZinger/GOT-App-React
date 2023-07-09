@@ -1,4 +1,4 @@
-const getResource = async (url) => {
+const getResource = async (url = "") => {
     const _apiBase = 'https://www.anapioficeandfire.com/api/characters',
           res = await fetch(`${_apiBase}${url}`);
 
@@ -27,8 +27,8 @@ const _transformCharacter = (char) => {
     return newObj;
 }
 
-const getAllCharacters = async (url = "") => {
-    const res = await getResource('?page=5&pageSize=10');
+const getAllCharacters = async (page) => {
+    const res = await getResource(`?page=${page}&pageSize=10`);
     return res.map(_transformCharacter)
 }
 

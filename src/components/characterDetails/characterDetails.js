@@ -1,13 +1,7 @@
-import React from 'react';
-
-import RandomCharacter from '../randomCharacter/randomCharacter';
+import React, {useState, useEffect} from 'react';
 
 import './characterDetails.css';
 
 export default function CharacterDetails() {
-  return (
-    <div className='characterDetails'>
-      <RandomCharacter/>
-    </div>
-  );
+  
 }

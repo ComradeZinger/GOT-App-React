@@ -1,0 +1,8 @@
+.pagination {
+    margin-top: 5px;
+    justify-content: center;
+}
+.pagItem {
+    width: 45px;
+    text-align: center;
+}
