@@ -3,7 +3,7 @@ import { ListGroup, ListGroupItem, Pagination, PaginationItem, PaginationLink } 
 
 import { getAllCharacters } from '../../services/fetchAPI.js'
 
-import './charctersList.css';
+import './dbList.css';
 
 export default function CharctersList() {
   const [charsList, setCharsList] = useState({});

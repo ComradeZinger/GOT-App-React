@@ -3,7 +3,7 @@ import { ListGroup, ListGroupItem, Button } from 'reactstrap';
 
 import { getCharacter } from '../../services/fetchAPI.js'
 
-import './randomCharacter.css';
+import './randomDetails.css';
 
 export default function RandomCharacter() {
 
