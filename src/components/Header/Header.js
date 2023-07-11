@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 
-import './appHeader.css';
+import './Header.css';
 
-export default function AppHeader() {
+export default function Header() {
 
     return (
-        <div className='appHeader'>
+        <div className='Header'>
             <h2 className='title'>Game of Thrones DB</h2>
             <div>
                 <Button className='tabBtn active'>Characters</Button>

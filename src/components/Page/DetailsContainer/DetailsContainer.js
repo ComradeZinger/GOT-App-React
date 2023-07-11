@@ -1,8 +1,8 @@
 import React from 'react';
 
-import RandomDetails from '../randomDetails/randomDetails';
+import RandomDetails from './RandomDetails/RandomDetails';
 
-import './certainDetails.css';
+import './DetailsContainer.css';
 
 export default function DetailsContainer() {
     return (

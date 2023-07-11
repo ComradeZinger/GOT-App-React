@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ListGroup, ListGroupItem, Button } from 'reactstrap';
 
-import { getCharacter } from '../../services/fetchAPI.js'
+import { getCharacter } from '../../../../services/fetchAPI.js'
 
-import './randomDetails.css';
+import './RandomDetails.css';
 
 export default function RandomCharacter() {
 

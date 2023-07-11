@@ -1,8 +1,8 @@
 import React from 'react';
 
-import DbList from '../dbList/dbList.js';
+import DbList from './DbList/DbList.js';
 
-import './dbContainer.css';
+import './DbContainer.css';
 
 export default function DbContainer() {
     return (

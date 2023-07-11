@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ListGroup, ListGroupItem, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 
-import { getAllCharacters } from '../../services/fetchAPI.js'
+import { getAllCharacters } from '../../../../services/fetchAPI.js'
 
-import './dbList.css';
+import './DbList.css';
 
 export default function CharctersList() {
   const [charsList, setCharsList] = useState({});

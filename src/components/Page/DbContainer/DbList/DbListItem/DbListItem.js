@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ListGroup, ListGroupItem, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 
-import './dbListItem.css';
+import './DbListItem.css';
 
 export default function CharactersListItem({name, onSelect}) {
 
