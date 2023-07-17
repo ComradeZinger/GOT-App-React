@@ -10,7 +10,15 @@ const getResource = async (url = "") => {
 };
 
 const _transformCharacter = (char) => {
+
+    const getId = () => {
+        const url = char.url,
+              splittedUrl = url.split('/');
+        return splittedUrl[splittedUrl.length - 1]
+    }
+
     const obj = {
+        id: getId(),
         name: char.name,
         gender: char.gender,
         born: char.born,
